@@ -146,7 +146,7 @@
 
 .pedirContainer {
   position: relative;
-  background-image: url('./img/backgroundPedir.jpeg');
+  background-image: url('../img/backgroundPedir.jpeg');
   margin-top: 100px;
   width: 100%;
   height: 600px;
