@@ -1,0 +1,57 @@
+:root {
+  --color-fondo-principal: #E9F5DB;
+  --color-fondo-secundario: #CFE1B9;
+  --color-fondo-terciario: #d6f5af;
+  --color-texto: #97A97C;
+  --color-titulo: #718355;
+  --color-acento: #87986A;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-fondo-principal);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-body-tertiary {
+  background-color: var(--color-fondo-terciario) !important;
+  top: 0;
+  padding: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+
+.me-auto {
+  margin: auto;
+}
+
+.iconcartContainer{
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.iconcartContainer span {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 2px;
+
+}

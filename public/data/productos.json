@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "imagen": "polloyarrozintegral.webp" ,
+        "nombre": "Pollo con arroz integral",
+        "descripcion": "Pechuga grillada con arroz integral y vegetales salteados.",
+        "precio": 3200,
+        "categoria": "Saludable"
+        
+      
+    },
+    {
+        "id": 2,
+        "imagen": "pastaconbolognesa.jpg",
+        "nombre": "Pasta con salsa boloñesa",
+        "descripcion": "Pasta casera con salsa boloñesa de carne magra y queso rallado.",
+        "precio": 3400,
+        "categoria": "Pastas"
+        
+    },
+    {
+        "id": 3,
+        "imagen": "ensaladamediterranea.jpeg",
+        "nombre": "Ensalada mediterránea",
+        "descripcion": "Mix de hojas verdes, tomate cherry, aceitunas, queso feta y aderezo de oliva.",
+        "precio": 2800,
+        "categoria": "Ensaladas"
+        
+    },
+    {
+        "id": 4,
+        "imagen": "wokvegetales.webp" ,
+        "nombre": "Wok de vegetales",
+        "descripcion": "Salteado de vegetales frescos con salsa de soja y fideos de arroz.",
+        "precio": 3100,
+        "categoria": "Vegano"
+    },
+    {
+        "id": 5,
+        "imagen": "milapure.jpeg" ,
+        "nombre": "Milanesa con puré",
+        "descripcion": "Milanesa de ternera con puré de papas cremoso.",
+        "precio": 3500,
+        "categoria": "Casero"
+        
+    },
+    {
+        "id": 6,
+        "imagen": "tartacalabaza.jpg" ,
+        "nombre": "Tarta de calabaza y queso",
+        "descripcion": "Porción de tarta casera con calabaza, cebolla y queso mozzarella.",
+        "precio": 2900,
+        "categoria": "Vegetariano"
+        
+    }
+]
