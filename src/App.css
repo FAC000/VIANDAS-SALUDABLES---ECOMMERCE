@@ -143,6 +143,12 @@
   margin: auto;
 }
 
+@media (min-width: 1024px) {
+  .nosotrosContainer {
+    width: 95%;
+  }
+}
+
 .pedirContainer {
   position: relative;
   background-image: url('../img/backgroundPedir.jpeg');
@@ -200,6 +206,19 @@
   font-size: 35px !important;
 }
 
+@media (min-width: 1024px) {
+  
+  .pedirInfo {
+    display: flex;
+    align-self: center;
+    width: 80%;
+  }
+
+  .pedirInfo i {
+    font-size: 35px;
+  }
+}
+
 /* ICONO WHATSAP */
 .whatsappContainer i {
   display: flex;
@@ -216,6 +235,12 @@
   color: #fff;
   text-align: center;
   z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .whatsappContainer i {
+    top: 90%;
+  }
 }
 
 /* PAGINA PRODUCTOS */
