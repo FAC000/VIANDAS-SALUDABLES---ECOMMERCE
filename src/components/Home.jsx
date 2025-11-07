@@ -58,7 +58,6 @@ export function Home() {
                     </div>
                     <div className="cardNosotros">
                         <p>🥗 Por salud y nutrición
-                            Comidas balanceadas: las porciones y combinaciones están pensadas por nutricionistas.
                             Control de calorías: ideal si estás cuidando tu peso o siguiendo un plan específico.
                             Variedad de menús: evita la monotonía alimentaria con opciones equilibradas.</p>
                     </div>
