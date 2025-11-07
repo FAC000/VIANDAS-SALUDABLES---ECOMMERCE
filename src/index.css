@@ -13,7 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--color-fondo-principal);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
 }
 
 .bg-body-tertiary {
@@ -28,10 +28,15 @@ body {
 
 .navbar-brand {
   font-size: 30px;
+  font-weight: 800;
+  color: #718355;
+  letter-spacing: 1px;
 }
 
 .nav-link {
   font-size: 20px;
+  color: #718355;
+  font-weight: 500;
 }
 
 .noUnderline {
@@ -43,7 +48,7 @@ body {
   margin: auto;
 }
 
-.iconcartContainer{
+.iconcartContainer {
   margin-left: 10px;
   margin-top: 20px;
   font-size: 15px;

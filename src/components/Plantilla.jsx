@@ -6,18 +6,35 @@ export function Plantilla({ productos }) {
     const { agregarCarrito } = useCarritoContext()
 
     return (
+        <div className="productoCard">
+  <div className="productoCardLeft">
+    <Link to={`/productos/${productos.id}`} className="productoLink">
+      <img
+        src={`./img/${productos.imagen}`}
+        alt={productos.nombre}
+      />
+    </Link>
+  </div>
 
-        <div className="producto-card">
-            <Link to={`/productos/${productos.id}`} className="productoLink">
-                <img src={`./img/${productos.imagen}`} alt="" />
-                <h3 className="producto-nombre">{productos.nombre}</h3>
-                <p className="producto-descripcion">{productos.descripcion}</p>
-                <p className="producto-precio">${productos.precio}</p>
-            </Link>
-            <button className="producto-btn" onClick={() => agregarCarrito(productos, 1)} >
-                Añadir al carrito
-            </button>
-        </div >
+  <div className="productoCardRight">
+    <Link to={`/productos/${productos.id}`} className="productoLink">
+      <div>
+        <h3 className="productoNombre">{productos.nombre}</h3>
+        <p className="productoDescripcion">{productos.descripcion}</p>
+        <p className="productoPrecio">${productos.precio}</p>
+      </div>
+    </Link>
+
+    <button
+      className="productoBtn"
+      onClick={() => {
+        agregarCarrito(productos, 1);
+      }}
+    >
+      Añadir al carrito
+    </button>
+  </div>
+</div>
 
 
     )

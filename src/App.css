@@ -1,3 +1,5 @@
+/* HOME */
+
 .carousel-inner {
   height: 600px;
 }
@@ -6,7 +8,6 @@
   margin-top: 150px;
   height: 1000px;
 }
-
 
 .homeContainer h1 {
   color: var(--color-titulo);
@@ -18,7 +19,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 1px 3px 1px var(--color-fondo-terciario);
-
 
 }
 
@@ -49,6 +49,7 @@
   }
 }
 
+
 .cardsContainer {
   display: flex;
   margin-top: 50px;
@@ -57,7 +58,6 @@
   justify-items: center;
   letter-spacing: 2px;
   font-size: 30px;
-
 }
 
 
@@ -71,7 +71,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .overlay {
@@ -139,7 +138,7 @@
   align-content: center;
 }
 
-.cardNosotros p{
+.cardNosotros p {
   width: 80%;
   margin: auto;
 }
@@ -153,7 +152,6 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-
 }
 
 .pedirOverlay {
@@ -200,9 +198,9 @@
 
 .bi-chevron-right {
   font-size: 35px !important;
-
 }
 
+/* ICONO WHATSAP */
 .whatsappContainer i {
   display: flex;
   justify-content: center;
@@ -220,94 +218,110 @@
   z-index: 10;
 }
 
+/* PAGINA PRODUCTOS */
 
 .productsContainer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 200px;
+  width: 85%;
   justify-content: center;
   justify-self: center;
-  margin-top: 200px;
-  width: 80%;
-
 }
 
-.productoLink {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.producto-card {
-  background-color: var(--color-fondo-secundario);
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  padding: 16px;
-  text-align: center;
-  max-width: 300px;
-  min-height: 450px;
-  margin: 20px 20px;
-  cursor: pointer;
+.productoCard {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  flex-direction: row;
+  background-color: var(--color-fondo-secundario);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 16px auto;
+  max-width: 700px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.producto-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--color-fondo-secundario);
+.productoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-.producto-card img {
+.productoCardLeft {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+.productoCardLeft img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
 
-.producto-nombre {
-  font-size: 1.2rem;
-  color: var(--color-titulo);
-  font-weight: 600;
-  margin: 12px 0 6px;
+.productoCardRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
 }
 
-.producto-descripcion {
-  font-size: 0.95rem;
+.productoNombre {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-titulo);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.productoDescripcion {
+  font-size: 14px;
   color: var(--color-texto);
-  margin-bottom: 8px;
-  min-height: 40px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
-.producto-precio {
-  font-size: 1.1rem;
-  color: var(--color-titulo);
+.productoPrecio {
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 14px;
+  color: var(--color-titulo);
+  margin-bottom: 16px;
 }
 
-.producto-btn {
-  background-color: var(--color-texto);
+.productoBtn {
+  background-color: var(--color-acento);
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.producto-btn:hover {
-  background-color: #323d2196;
+.productoBtn:hover {
+  background-color: var(--color-titulo);
   transform: scale(1.05);
 }
 
-.producto-btn:active {
+.productoBtn:active {
   transform: scale(0.97);
 }
 
+.productoLink {
+  text-decoration: none;
+  color: inherit;
+  flex-grow: 1;
+  display: block;
+}
+
+/* PAGINA PRODUCTOS DETAILS */
+
 .detailsContainer {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .productDetailContainer {
@@ -317,7 +331,6 @@
   justify-content: center;
   align-items: start;
   padding: 2rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .productCard {
@@ -354,8 +367,9 @@
 .productTitle {
   color: var(--color-titulo);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .productDescription {
@@ -363,12 +377,13 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .productPrice {
   color: var(--color-acento);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -378,18 +393,20 @@
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 1rem;
+  justify-content: center
 }
 
 .btnControl {
   background-color: var(--color-fondo-terciario);
   color: var(--color-titulo);
   border: none;
-  padding: 0.4rem 0.9rem;
+  padding: 5px 60px;
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
 }
 
 .btnControl:hover {
@@ -410,7 +427,7 @@
   color: var(--color-titulo);
   font-weight: 600;
   font-size: 1.1rem;
-  padding: 0.5rem 1rem;
+  padding: 5px 40px;
   border-radius: 8px;
   min-width: 40px;
   text-align: center;
@@ -421,18 +438,20 @@
   background-color: var(--color-titulo);
   color: #fff;
   border: none;
-  padding: 0.8rem 1.4rem;
+  padding: 10px;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  align-self: flex-start;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
 }
 
 .btnAgregar:hover {
   background-color: var(--color-acento);
   transform: scale(1.05);
 }
+
+/* PAGINA CARRITO */
 
 .carritoContainer {
   display: flex;
@@ -443,9 +462,11 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 200px;
+  font-family: 'Montserrat';
+  width: 80%;
+  justify-content: center;
+  justify-self: center;
 }
-
-
 
 .carritoLeft {
   flex: 2;
@@ -457,7 +478,7 @@
 .carritoRight {
   flex: 1;
   background-color: var(--color-fondo-terciario);
-  border: 2px solid var(--color-acento);
+
   border-radius: 16px;
   padding: 24px;
   height: fit-content;
@@ -469,13 +490,14 @@
 .resumenTitle {
   font-size: 24px;
   color: #2e3a1f;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .resumenCantidad,
 .resumenPrecio {
   font-size: 18px;
   color: #4b5530;
+  font-weight: 600;
 }
 
 .finalizarCompraBtn {
@@ -500,7 +522,6 @@
   display: flex;
   align-items: center;
   background-color: var(--color-fondo-secundario);
-  border: 2px solid var(--color-acento);
   border-radius: 16px;
   padding: 16px;
   width: 100%;
@@ -512,7 +533,7 @@
   border-radius: 12px;
   object-fit: cover;
   margin-right: 24px;
-  border: 2px solid var(--color-acento);
+
 }
 
 .carritoItemDetails {
@@ -525,7 +546,7 @@
 .carritoItemName {
   font-size: 20px;
   color: var(--color-titulo);
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -534,5 +555,89 @@
 .carritoItemSubtotal {
   font-size: 16px;
   color: #030302;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+/* MODAL */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: #070707b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modalContainer {
+  background-color: var(--color-fondo-principal);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: scaleIn 0.3s ease;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--color-acento);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modalCloseBtn:hover {
+  color: #2e3a1f;
+
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-titulo);
+  margin-bottom: 20px;
+}
+
+.modalText {
+  color: var(--color-texto);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.modalButton {
+  background-color: var(--color-fondo-secundario);
+  color: var(--color-titulo);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.modalButton:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

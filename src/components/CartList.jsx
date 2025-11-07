@@ -1,10 +1,17 @@
 import { useCarritoContext } from "../context/CartContext";
 import { IconCart } from "./IconCart";
+import { Modal } from "./Modal";
+import { useState } from "react";
 
 export function CartList() {
     const { carrito, cantidadCarrito, precioTotal } = useCarritoContext();
+    const [modalAbierto, setModalAbierto] = useState(false);
 
-
+    const handleFinalizarCompra = () => {
+        if (carrito.length > 0) {
+            setModalAbierto(true); 
+        }
+    };
     return (
         <div className="carritoContainer">
             {carrito.length === 0 ? (
@@ -40,10 +47,15 @@ export function CartList() {
                             Precio total: $
                             {precioTotal()}
                         </p>
-                        <button className="finalizarCompraBtn">Finalizar Compra</button>
+                        <button className="finalizarCompraBtn" onClick={handleFinalizarCompra}>Finalizar Compra</button>
                     </div>
                 </>
             )}
+
+            <Modal
+                isOpen={modalAbierto}
+                onClose={() => setModalAbierto(false)}
+            />
         </div>
 
 
